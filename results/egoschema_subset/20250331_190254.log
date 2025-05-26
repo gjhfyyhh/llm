@@ -1,0 +1,20 @@
+2025-03-31 19:02:54,220 - util - INFO - Namespace(dataset='demo', cap_path='data/demo/demo_cap.json', anno_path='data/demo/demo_anno.json', duration_path='data/egoschema/duration.json', model_name='gpt-4o-2024-11-20', temperature=0.1, cache_path='cache/cache_gpt4o.pkl', use_cache=True, output_base_path='results/demo/', logger_base_path='results/demo/', final_step=2, init_interval=1, s_conf_lower=1.0, r_conf_lower=1.0, ans_mode='r', post_s_conf_lower=1.0, post_r_conf_lower=1.0, post_ans_mode='r', post_resume_samples=True, search_strategy='bfs', beam_size=1, for_seg_not_interested='retain', max_workers=3, process_num=500, specific_id=None, specific_id_path=None, avoid_id=None, reprocess_log=None, example_summary_path='data/egoschema/example_summary.txt', example_qa_by_summary_path='data/egoschema/example_qa_by_summary.txt') (line 587)
+2025-03-31 19:02:54,221 - util - INFO - 1 videos to process (line 538)
+2025-03-31 19:02:54,224 - util - INFO - Start to process 0d173aa3-9a94-4ba4-84bc-949d3254a63d (line 360)
+2025-03-31 19:02:54,225 - util - INFO - Messages: [{'role': 'system', 'content': 'You are a helpful assistant.'}, {'role': 'user', 'content': "\n    Given a video that has 180 frames, the frames are decoded at 1 fps. Given the following descriptions of the sampled frames in the video:\n    {'frame 1': '#C C walks towards the tray on the table.', 'f (line 95)
+2025-03-31 19:02:54,225 - util - INFO - Cache Miss (line 107)
+2025-03-31 19:03:07,145 - util - INFO - Response: To determine the key differences between C's actions involving the first sack and his actions with the subsequent sacks, we need to analyze the descriptions of the frames that involve sacks.
+
+1. **Identify frames involving sacks:**
+   - Frame 67: "C places the sack on the floor with his left hand."
+ (line 138)
+2025-03-31 19:03:07,145 - util - WARNING - Error saving to cache: [Errno 2] No such file or directory: 'cache/cache_gpt4o.pkl' (line 215)
+2025-03-31 19:03:07,145 - util - INFO - Cache Saved (line 142)
+2025-03-31 19:03:07,146 - util - INFO - Messages: [{'role': 'system', 'content': 'You are a helpful assistant designed to output JSON.'}, {'role': 'user', 'content': 'Please assess the confidence level in the decision-making process.\n    The provided information is as as follows,\n    \n    Given a video that has 180 frames, the frames are decoded (line 95)
+2025-03-31 19:03:07,146 - util - INFO - Cache Miss (line 107)
+2025-03-31 19:03:09,220 - util - INFO - Response: {
+    "confidence": "3"
+} (line 138)
+2025-03-31 19:03:09,220 - util - WARNING - Error saving to cache: [Errno 2] No such file or directory: 'cache/cache_gpt4o.pkl' (line 215)
+2025-03-31 19:03:09,220 - util - INFO - Cache Saved (line 142)
+2025-03-31 19:03:09,220 - util - INFO - Finished video: 0d173aa3-9a94-4ba4-84bc-949d3254a63d/3/0 (line 491)

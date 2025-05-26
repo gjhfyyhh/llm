@@ -1,0 +1,6 @@
+parser.add_argument("--cache_path", default="cache/cache_gpt4o.pkl", type=str)
+parser.add_argument("--dataset", default='egoschema', type=str)
+parser.add_argument("--cap_path", default='data/egoschema/lavila_fullset.json', type=str)
+parser.add_argument("--anno_path", default='data/egoschema/full_anno.json', type=str)
+parser.add_argument("--output_base_path", default="results/egoschema/", type=str)
+parser.add_argument("--logger_base_path", default="results/egoschema/", type=str) 

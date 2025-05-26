@@ -1,0 +1,41 @@
+2025-03-31 18:43:35,146 - util - INFO - Namespace(dataset='demo', cap_path='data/demo/demo_cap.json', anno_path='data/demo/demo_anno.json', duration_path='data/egoschema/duration.json', model_name='gpt-4o-2024-11-20', temperature=1.0, cache_path='cache/cache_gpt4o.pkl', use_cache=True, output_base_path='results/demo/', logger_base_path='results/demo/', final_step=5, init_interval=10, s_conf_lower=3, r_conf_lower=3, ans_mode='vote_conf_and', post_s_conf_lower=1, post_r_conf_lower=2, post_ans_mode='vote', post_resume_samples=True, search_strategy='a_star', beam_size=5, for_seg_not_interested='retain', max_workers=3, process_num=500, specific_id=None, specific_id_path=None, avoid_id=None, reprocess_log=None, example_summary_path='data/egoschema/example_summary.txt', example_qa_by_summary_path='data/egoschema/example_qa_by_summary.txt') (line 571)
+2025-03-31 18:43:35,146 - util - INFO - 1 videos to process (line 538)
+2025-03-31 18:43:35,150 - util - INFO - Start to process 0d173aa3-9a94-4ba4-84bc-949d3254a63d (line 360)
+2025-03-31 18:43:35,150 - util - INFO - Messages: [{'role': 'user', 'content': "0d173aa3-9a94-4ba4-84bc-949d3254a63d\n\nYou're a visual summary expert. You can accurately make a [SUMMARY] based on [CAPTION], where the [CAPTION] is textual descriptions of the video as seen from your first person perspective.\n\n\n[CAPTION]: Textual descriptions of f (line 95)
+2025-03-31 18:43:35,150 - util - INFO - Cache Miss (line 107)
+2025-03-31 18:43:46,991 - util - INFO - Response: C walks towards the tray on the table and moves the baking soda container from the table to the sink. C then pours water from a bowl into the dough, looks around, and cuts the flour. C picks a packet of flour and stares at the sack before putting the flour in the bag. After picking a packet of salt, (line 138)
+2025-03-31 18:43:46,991 - util - WARNING - Error saving to cache: [Errno 2] No such file or directory: 'cache/cache_gpt4o.pkl' (line 215)
+2025-03-31 18:43:46,991 - util - INFO - Cache Saved (line 142)
+2025-03-31 18:43:46,991 - util - INFO - Messages: [{'role': 'user', 'content': '0d173aa3-9a94-4ba4-84bc-949d3254a63d\n\nYou are a visual question answering expert. You can choose the correct answer from five options of [OPTION] based on the [CAPTION], [SUMMARY], [QUESTION], and [REASON]. Where the [CAPTION] is textual descriptions of the video as s (line 95)
+2025-03-31 18:43:46,991 - util - INFO - Cache Miss (line 107)
+2025-03-31 18:43:53,981 - util - INFO - Response: {
+"REASON": "In the provided captions, C first engages with a flour sack but does not seem to operate the mixer with the first sack; instead, he pours its contents directly into the dough mixer. For the subsequent sacks, C appears to handle the flour differently, indicating that he likely interacted (line 138)
+2025-03-31 18:43:53,982 - util - WARNING - Error saving to cache: [Errno 2] No such file or directory: 'cache/cache_gpt4o.pkl' (line 215)
+2025-03-31 18:43:53,982 - util - INFO - Cache Saved (line 142)
+2025-03-31 18:43:53,982 - util - INFO - Messages: [{'role': 'system', 'content': 'You are a helpful assistant.'}, {'role': 'user', 'content': "\n    Given a video that has 180 frames, the frames are decoded at 1 fps. Given the following descriptions of the sampled frames in the video:\n    {'frame 1': '#C C walks towards the tray on the table.', 'f (line 95)
+2025-03-31 18:43:53,982 - util - INFO - Cache Miss (line 107)
+2025-03-31 18:44:05,240 - util - INFO - Response: To address the question, we need to analyze C's actions regarding the first sack in relation to the subsequent sacks as mentioned in the provided frame descriptions. Notably, there are descriptions of C interacting with flour packets but not much detail about the concept of "sacks." 
+
+We can glean t (line 138)
+2025-03-31 18:44:05,240 - util - WARNING - Error saving to cache: [Errno 2] No such file or directory: 'cache/cache_gpt4o.pkl' (line 215)
+2025-03-31 18:44:05,240 - util - INFO - Cache Saved (line 142)
+2025-03-31 18:44:05,241 - util - INFO - Messages: [{'role': 'system', 'content': 'You are a helpful assistant designed to output JSON.'}, {'role': 'user', 'content': 'Please assess the confidence level in the decision-making process.\n    The provided information is as as follows,\n    \n    Given a video that has 180 frames, the frames are decoded (line 95)
+2025-03-31 18:44:05,241 - util - INFO - Cache Miss (line 107)
+2025-03-31 18:44:25,496 - util - INFO - Response: {"confidence": "3"} (line 138)
+2025-03-31 18:44:25,496 - util - WARNING - Error saving to cache: [Errno 2] No such file or directory: 'cache/cache_gpt4o.pkl' (line 215)
+2025-03-31 18:44:25,497 - util - INFO - Cache Saved (line 142)
+2025-03-31 18:44:25,497 - util - INFO - Messages: [{'role': 'system', 'content': 'You are a helpful assistant designed to output JSON.'}, {'role': 'user', 'content': '\n    Given a video that has 180 frames, the frames are decoded at 1 fps. Given the following descriptions of sampled frames in the video:\n    {\'frame 1\': \'#C C walks towards the  (line 95)
+2025-03-31 18:44:25,497 - util - INFO - Cache Miss (line 107)
+2025-03-31 18:44:32,920 - util - INFO - Response: {
+  "frame_descriptions": [
+    {
+      "segment_id": "4",
+      "duration": "31 - 41",
+      "description": "Frame of C moving the flour container." 
+    }
+  ]
+} (line 138)
+2025-03-31 18:44:32,920 - util - WARNING - Error saving to cache: [Errno 2] No such file or directory: 'cache/cache_gpt4o.pkl' (line 215)
+2025-03-31 18:44:32,921 - util - INFO - Cache Saved (line 142)
+2025-03-31 18:44:32,921 - util - INFO - Messages: [{'role': 'system', 'content': 'You are a helpful assistant designed to output JSON.'}, {'role': 'user', 'content': '\n    Given a video that has 180 frames, the frames are decoded at 1 fps. Given the following descriptions of sampled frames in the video:\n    {\'frame 1\': \'#C C walks towards the  (line 95)
+2025-03-31 18:44:32,921 - util - INFO - Cache Miss (line 107)
